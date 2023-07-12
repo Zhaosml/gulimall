@@ -1,0 +1,17 @@
+
+问题1：renren-fast模块引入之后pom文件爆红
+解决方式：在<parent><parent/>里加
+<relativePath/> <!-- lookup parent from repository -->
+
+问题2：运行fast-vue 前端代码 使用 node-js 14
+使用命令：
+npm install -g cnpm --registry=https://registry.npm.taobao.org
+cnpm install
+npm install --ignore-scripts
+
+报错信息：
+npm警告sass-loader@6.0.6需要节点sass@^4.0.0的对等节点，但未安装任何对等节点。您必须自己安装对等依赖项。
+
+原因：
+没安装node-sass@^4.0.0 需要手动安装   安装命令 npm install node-sass@^4.0.0
+
