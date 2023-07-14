@@ -12,6 +12,11 @@
 	<description>每一个微服务公共的依赖，bean，工具，等等</description>
 	<dependencies>
 		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.18.26</version>
+		</dependency>
+		<dependency>
 			<groupId>com.baomidou</groupId>
 			<artifactId>mybatis-plus-boot-starter</artifactId>
 			<version>3.5.3.1</version>
@@ -27,6 +32,12 @@
 			<artifactId>commons-lang</artifactId>
 			<version>2.6</version>
 			<scope>compile</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>8.0.33</version>
 		</dependency>
 	</dependencies>
 	<build>
