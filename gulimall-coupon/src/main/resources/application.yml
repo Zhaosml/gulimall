@@ -1,0 +1,6 @@
+spring:
+  datasource:
+    username: root
+    password: 204317
+    url: jdbc:mysql://localhost:3306/gulimall_sms
+    driver-class-name: com.mysql.cj.jdbc.Driver
