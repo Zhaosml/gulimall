@@ -1,10 +1,14 @@
 package com.atguigu.gulimall.product.entity;
 
+import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 
 import java.io.Serializable;
 import java.util.Date;
+import java.util.List;
+
+import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;
 
 /**
@@ -16,6 +20,7 @@ import lombok.Data;
  */
 @Data
 @TableName("pms_category")
+
 public class CategoryEntity implements Serializable {
 	private static final long serialVersionUID = 1L;
 
@@ -56,5 +61,9 @@ public class CategoryEntity implements Serializable {
 	 * 商品数量
 	 */
 	private Integer productCount;
+
+	@JsonInclude(JsonInclude.Include.NON_EMPTY)
+	@TableField(exist=false)
+	private List<CategoryEntity> children;
 
 }
