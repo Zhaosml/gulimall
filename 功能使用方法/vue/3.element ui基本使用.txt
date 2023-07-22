@@ -1,0 +1,21 @@
+1)、sudo npm install element-ui --save 安装element依赖
+
+2)、在src/main.js 里导入element ui依赖以及样式
+import ElementUI  from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css';
+Vue.use(ElementUI);
+
+3)、在App.vue里复制element ui里的布局样式
+    外测容器        el-container
+    主要侧边栏和顶部 el-aside el-header
+    主要部分是 el-main
+    底部      el-footer
+
+4)、侧边栏跳转指定页面
+    在 el-menu里设置router="true" 开启vue路由路径对象
+    然后el-menu-item 里的 index 属性 直接写路由设置的路径
+
+5)、设置路由 每一次设置需要导入模块文件  然后再设置路由的参数
+
+6)、
+7)、

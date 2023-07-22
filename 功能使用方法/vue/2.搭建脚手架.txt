@@ -1,0 +1,6 @@
+
+ 1)、sudo npm install webpack -g  安装webpack   这是vue默认打包工具
+ 2)、sudo npm install -g @vue/cli 3版本  创建vue项目
+ 3)、vue init webpack vue-demo   初始化vue项目 项目文件名称是vue-demo
+
+ vue -V 查看vue/cli版本
