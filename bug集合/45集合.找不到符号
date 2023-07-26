@@ -1,0 +1,7 @@
+报错信息：java: 找不到符号
+       符号:   方法 getParentCid()
+       位置: 类型为com.atguigu.gulimall.product.entity.CategoryEntity的变量 categ一般是哪里出错
+
+解决方式：
+1)、设置 > 构建,执行,部署(第6个) > 编辑器(第2个) > java编译器(第2个)  这里的版本都改成1.8
+2)、文件 > 项目结构 > 模块 > 源的语言级别必须是8，依赖的sdk版本必须是1.8。 千万别写错成18

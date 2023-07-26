@@ -64,6 +64,7 @@ public class CategoryEntity implements Serializable {
 
 	@JsonInclude(JsonInclude.Include.NON_EMPTY)
 	@TableField(exist=false)
+	//子分类  假数据 不是数据表里的字段
 	private List<CategoryEntity> children;
 
 }

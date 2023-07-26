@@ -37,10 +37,8 @@ public class CategoryController {
     @RequestMapping("/list/tree")
     public R list(){
         List<CategoryEntity> entities = categoryService.listWithTree();
-
         return R.ok().put("data", entities);
     }
-
 
     /**
      * 信息
@@ -52,7 +50,6 @@ public class CategoryController {
 
         return R.ok().put("category", category);
     }
-
     /**
      * 保存
      */
