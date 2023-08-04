@@ -1,0 +1,17 @@
+OpenFegin 使用教程
+
+1)、引入open-feign 依赖（此项目在公共模块里写了）参考公共类pom文件
+2)、在包里创建实现类  编写一个接口，告诉SpringCloud这个接口需要调用远程服务
+3.需要使用OpenFegin的模块 创建feign包
+├─举例：gulimall-member模块
+│  ├─创建feign包
+│  ├─创建实现类   CouponFeginService
+│  ├─实现类写注解 @FeignClient("gulimall-coupon")   参数是被调用模块的服务名
+│  └─编写接口  @RequestMapping("coupon/coupon/member/list")  请求路径必须写全
+│             public R membercoupons();   接口的每一个方法  都是被远程调用模块服务的那个请求
+4.开启远程调用功能  启动类设置注解  @EnableFeignClients(basePackages = "com.atguigu.gulimall.member.fegin")  参数是包的位置
+5.getaway网关创建  还没写配置文件
+6.商品分类模块 三级分类-查询-递归-递归树形结构数据获取
+
+---------------------------------------------------前50集-----------------------------------------------------------
+

@@ -1,0 +1,5 @@
+
+这一集设置了网关跨域，但是renren-fast里有跨域。
+在网关设置后就重复了。
+我们需要注释renrne-fast的跨域  在config>CorsConfig
+然后重新构建maven才行

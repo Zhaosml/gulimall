@@ -15,9 +15,10 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 /**
  * 1、想要远程调用别的服务
  * 1）、引入open-feign
- * 2）、编写一个接口，告诉SpringCloud这个接口需要调用远程服务  当前模块创建feign包在包里创建实现类
+ * 2）、当前模块创建feign包在包里创建实现类  编写一个接口，告诉SpringCloud这个接口需要调用远程服务
  *   1、声明接口的每一个方法都是调用哪个远程服务的那个请求
- * 3）、开启远程调用功能  启动类设置注解
+ * 3）、开启远程调用功能  启动类设置注解  @EnableFeignClients(basePackages = "com.atguigu.gulimall.member.fegin")  参数是包的位置
+ *     feign里的也要注解 @FeignClient("gulimall-coupon")  参数同配置服务名
  */
 @SpringBootApplication
 @EnableDiscoveryClient

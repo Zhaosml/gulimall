@@ -9,9 +9,14 @@ npm install -g cnpm --registry=https://registry.npm.taobao.org
 cnpm install
 npm install --ignore-scripts
 
-报错信息：
-npm警告sass-loader@6.0.6需要节点sass@^4.0.0的对等节点，但未安装任何对等节点。您必须自己安装对等依赖项。
+├─报错信息：
+│   └─npm警告sass-loader@6.0.6需要节点sass@^4.0.0的对等节点，但未安装任何对等节点。您必须自己安装对等依赖项。
+├─原因：
+└─没安装node-sass@^4.0.0 需要手动安装   安装命令 npm install node-sass@^4.0.0
 
-原因：
-没安装node-sass@^4.0.0 需要手动安装   安装命令 npm install node-sass@^4.0.0
+├─报错信息：
+│   └─Module build failed: Error: Node Sass does not yet support your current environment: OS X Unsupported architecture (arm64) with Unsupported runtime (93)
+├─原因：
+└─node16版本不对，node14就对了
+
 
